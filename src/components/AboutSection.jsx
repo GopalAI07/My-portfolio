@@ -20,24 +20,24 @@ import { playCyberClick, playCyberHover } from '../utils/soundEffects';
 const AboutSection = () => {
   const coreCompetencies = [
     {
-      icon: Brain,
-      title: "Generative AI & LLM Systems",
-      desc: "Integrating Google Gemini (google-genai) into autonomous summarization pipelines, NLP sentiment engines, and conversational AI interfaces."
+      icon: Cpu,
+      title: "Frontend Engineering & UI/UX",
+      desc: "Building responsive, component-driven user interfaces using React 18, Vite, modern ES6+, Tailwind CSS, and state management with Redux."
     },
     {
-      icon: Cpu,
-      title: "Full-Stack Robotic Architecture",
-      desc: "Engineering high-speed backends with FastAPI and Django (MVT pattern) with reactive React 18 frontend interfaces."
+      icon: Brain,
+      title: "Backend & Microservices Architecture",
+      desc: "Engineering high-throughput, secure RESTful APIs and backend services using FastAPI and Django (MVT) with JWT auth and Python OOP."
     },
     {
       icon: Radar,
-      title: "Real-Time Telemetry & WebRTC",
-      desc: "Designing peer-to-peer audio/video streaming, low-latency WebSocket signaling relays, and multi-user room matrices."
+      title: "Real-Time Systems & WebRTC",
+      desc: "Designing low-latency WebSocket signaling relays, multi-user audio/video WebRTC rooms, and live communication pipelines."
     },
     {
       icon: Globe,
-      title: "Deep Space Data Mining & Viz",
-      desc: "Developing analytical dashboards with Streamlit, Plotly, Pandas, and NumPy for political sentiment analysis and data exploration."
+      title: "Database Design & Cloud Deployment",
+      desc: "Architecting relational schemas in PostgreSQL and MySQL, optimizing SQL queries, and deploying production apps across Vercel and Render."
     }
   ];
 
@@ -49,13 +49,13 @@ const AboutSection = () => {
         <div className="text-center space-y-3 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#060e28] border border-cyan-500/30 text-cyan-400 text-xs font-mono">
             <Bot className="w-3.5 h-3.5" />
-            <span>[SUBSYSTEM 01: ENGINEER PROFILE & DIRECTIVES]</span>
+            <span>[SUBSYSTEM 01: FULL-STACK DEVELOPER PROFILE & DIRECTIVES]</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white tracking-tight">
-            Engineer Profile & <span className="gradient-text-plasma">Capabilities</span>
+            Developer Profile & <span className="gradient-text-plasma">Core Expertise</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-sans">
-            Artificial Intelligence & Data Science Engineer specialized in resilient, mission-critical full-stack software.
+            Full-Stack Developer specialized in architecting scalable, modern web applications from interactive frontends to robust server-side backends.
           </p>
         </div>
 

@@ -93,13 +93,12 @@ const ResumeModal = ({ isOpen, onClose }) => {
               TECHNICAL SKILLS
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-slate-300 font-mono">
-              <div>• Programming: Python, JavaScript, SQL</div>
-              <div>• Databases: MySQL, PostgreSQL</div>
-              <div>• Backend Frameworks: FastAPI, Django (MVT)</div>
-              <div>• Core Concepts: OOPs concept in Python, REST APIs</div>
-              <div>• Frontend: React 18, Vite, Redux Toolkit, Tailwind, HTML5, CSS3, Bootstrap</div>
-              <div>• AI & Data Science: Google Gemini (google-genai), Streamlit, Plotly, Pandas, NumPy</div>
-              <div>• Real-time & Cloud: WebSockets, WebRTC, Vercel, Render, Git/GitHub</div>
+              <div>• Frontend Engineering: React 18, Vite, JavaScript (ES6+), Three.js, Redux Toolkit, Tailwind CSS</div>
+              <div>• Backend Development: Python (OOP), FastAPI, Django (MVT), RESTful APIs, JWT Auth</div>
+              <div>• Databases & Data: PostgreSQL, MySQL, SQL Query Optimization, SQLAlchemy ORM</div>
+              <div>• Real-Time & Networking: WebSockets, WebRTC Video/Audio Calling & Signaling</div>
+              <div>• Cloud & DevOps: Git/GitHub, Vercel, Render, Postman API Testing & Debugging</div>
+              <div>• Tools & Integrations: Google Gemini API, Streamlit, Pandas, NumPy, Bootstrap 5</div>
             </div>
           </div>
 

@@ -110,7 +110,7 @@ const Navbar = ({ onOpenResume, onOpenParentalView }) => {
               GOPAL CHAUHAN
             </span>
             <span className="text-[8px] sm:text-[9px] font-mono text-cyan-400 tracking-wider uppercase font-semibold whitespace-nowrap">
-              AI & DATA SCIENCE ENGINEER
+              FULL-STACK DEVELOPER
             </span>
           </div>
         </a>

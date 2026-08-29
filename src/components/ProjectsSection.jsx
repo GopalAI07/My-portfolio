@@ -42,10 +42,10 @@ const ProjectsSection = () => {
             <span>[SUBSYSTEM 03: MISSION DEPLOYMENTS & PROTOCOLS]</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white tracking-tight">
-            Orbital & Production <span className="gradient-text-plasma">Missions</span>
+            Featured Full-Stack <span className="gradient-text-plasma">Projects</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-sans">
-            High-impact software systems, AI pipelines, and distributed data platforms deployed to real-world cloud infrastructures.
+            Production-grade full-stack web platforms, real-time conferencing systems, and enterprise web applications deployed to cloud environments.
           </p>
         </div>
 

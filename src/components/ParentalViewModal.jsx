@@ -94,7 +94,7 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
               About Gopal Chauhan
             </h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Gopal is a qualified <strong>Artificial Intelligence & Data Science Engineer</strong> based in <strong>Kandivali West, Mumbai</strong>. He creates software and intelligent computer systems that make day-to-day life and business operations easier, faster, and smarter.
+              Gopal is a skilled <strong>Full-Stack Developer</strong> based in <strong>Kandivali West, Mumbai</strong>. He builds modern websites, real-time video conference platforms, and digital software systems that make business operations, learning, and communication faster, easier, and seamless.
             </p>
           </div>
 

@@ -56,46 +56,46 @@ const HeroSection = ({ onOpenResume, onOpenParentalView }) => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
               </span>
-              <span className="font-bold tracking-wider">UNIT: GOPAL-AI</span>
+              <span className="font-bold tracking-wider">UNIT: GOPAL-DEV</span>
               <span className="text-slate-600">|</span>
-              <span className="text-slate-300">DEEP SPACE IT PROFESSIONAL</span>
+              <span className="text-slate-300">FULL-STACK SOFTWARE DEVELOPER</span>
             </div>
 
             {/* Headline */}
             <div className="space-y-2">
               <p className="text-xs sm:text-sm font-mono text-cyan-400 font-semibold tracking-widest uppercase flex items-center gap-2">
                 <Cpu className="w-4 h-4 text-cyan-400" />
-                <span>Artificial Intelligence & Data Science</span>
+                <span>Full-Stack Web & Software Engineering</span>
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-white leading-tight">
                 <span className="block text-slate-100">{personalInfo.name}</span>
                 <span className="block gradient-text-plasma mt-1">
-                  AI & DS Engineer
+                  Full-Stack Developer
                 </span>
               </h1>
             </div>
 
             {/* Subtitle with Robotic Precision */}
             <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
-              Architecting interstellar-grade <span className="text-cyan-300 font-medium">Generative AI platforms</span>, 
+              Architecting responsive <span className="text-cyan-300 font-medium">React 18 frontends</span>, 
               high-throughput <span className="text-purple-300 font-medium">FastAPI & Django backends</span>, 
-              low-latency <span className="text-emerald-300 font-medium">WebRTC communication relays</span>, 
-              and cybernetic <span className="text-blue-300 font-medium">React 18</span> web applications.
+              scalable <span className="text-emerald-300 font-medium">PostgreSQL & MySQL databases</span>, 
+              and real-time <span className="text-blue-300 font-medium">WebRTC & WebSockets</span>.
             </p>
 
             {/* Robotic Subsystem Telemetry Chips */}
             <div className="flex flex-wrap gap-2 pt-1 font-mono text-xs text-slate-300">
               <span className="px-3 py-1 bg-[#091129] border border-cyan-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Code className="w-3.5 h-3.5 text-cyan-400" /> Python (OOP Engine)
+                <Code className="w-3.5 h-3.5 text-cyan-400" /> React 18 & Vite
               </span>
               <span className="px-3 py-1 bg-[#091129] border border-purple-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-purple-400" /> Gemini Neural AI
+                <Flame className="w-3.5 h-3.5 text-purple-400" /> FastAPI & Django
               </span>
               <span className="px-3 py-1 bg-[#091129] border border-blue-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Flame className="w-3.5 h-3.5 text-blue-400" /> FastAPI & React 18
+                <Sparkles className="w-3.5 h-3.5 text-blue-400" /> PostgreSQL & MySQL
               </span>
               <span className="px-3 py-1 bg-[#091129] border border-emerald-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Radio className="w-3.5 h-3.5 text-emerald-400" /> WebRTC Signaling
+                <Radio className="w-3.5 h-3.5 text-emerald-400" /> WebSockets & WebRTC
               </span>
             </div>
 
