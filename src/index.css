@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #02040d;
+  color: #f1f5f9;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Deep Space Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #02040d;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f172a;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+  box-shadow: 0 0 12px #00f0ff;
+}
+
+/* Robotic Mech HUD Panels */
+.mech-panel {
+  background: rgba(6, 11, 26, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 240, 255, 0.03);
+  position: relative;
+}
+
+.mech-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00f0ff;
+  border-left: 2px solid #00f0ff;
+}
+
+.mech-panel::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00f0ff;
+  border-right: 2px solid #00f0ff;
+}
+
+.mech-card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(10, 18, 42, 0.85) 0%, rgba(4, 8, 20, 0.95) 100%);
+  border: 1px solid rgba(0, 240, 255, 0.18);
+  border-radius: 0.75rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mech-card:hover {
+  border-color: rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.25), inset 0 0 15px rgba(0, 240, 255, 0.08);
+  transform: translateY(-4px) scale(1.008);
+}
+
+/* Deep Space & Mech Grid */
+.space-grid-bg {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+}
+
+.space-nebula-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 40%, transparent 70%);
+}
+
+/* Sci-Fi Text Gradients */
+.gradient-text-plasma {
+  background: linear-gradient(135deg, #ffffff 0%, #00f0ff 45%, #38bdf8 70%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-cyber {
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Robotic HUD Crosshairs & Markers */
+.hud-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #00f0ff;
+  border-left: 2px solid #00f0ff;
+}
+
+.hud-corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #00f0ff;
+  border-right: 2px solid #00f0ff;
+}
+
+.hud-corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #00f0ff;
+  border-left: 2px solid #00f0ff;
+}
+
+.hud-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #00f0ff;
+  border-right: 2px solid #00f0ff;
+}
+
+/* Scanlines and Telemetry */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(0, 240, 255, 0.02),
+    rgba(0, 0, 0, 0),
+    rgba(168, 85, 247, 0.02)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
+
+/* Thruster Flame Pulse */
+@keyframes plasmaPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px rgba(0, 240, 255, 0.4);
+    opacity: 0.85;
+  }
+  50% {
+    box-shadow: 0 0 25px #00f0ff, 0 0 50px rgba(0, 240, 255, 0.8), 0 0 70px rgba(168, 85, 247, 0.4);
+    opacity: 1;
+  }
+}
+
+.plasma-glow {
+  animation: plasmaPulse 2.5s infinite ease-in-out;
+}
