@@ -94,7 +94,7 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
               About Gopal Chauhan
             </h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Gopal is a skilled <strong>Full-Stack Developer</strong> based in <strong>Kandivali West, Mumbai</strong>. He builds modern websites, real-time video conference platforms, and digital software systems that make business operations, learning, and communication faster, easier, and seamless.
+              Gopal is a skilled <strong>Python Full Stack Developer</strong> based in <strong>Kandivali West, Mumbai</strong>. He builds modern websites, real-time video conference platforms, and digital software systems that make business operations, learning, and communication faster, easier, and seamless.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
               <div className="p-4 rounded-xl bg-[#060c20] border border-cyan-500/30 space-y-2">
                 <div className="flex justify-between items-start">
                   <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[11px] font-bold">
-                    Passed with Distinction
+                    Aggregate CGPI: 7.83
                   </span>
                   <span className="text-xs text-slate-400 font-mono">2020 - 2024</span>
                 </div>
@@ -119,7 +119,7 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
                   Bachelor of Engineering (B.E.)
                 </h5>
                 <p className="text-xs text-cyan-300 font-medium">
-                  Artificial Intelligence & Data Science
+                  Artificial Intelligence & Data Science (AI & DS)
                 </p>
                 <p className="text-xs text-slate-400">
                   Rizvi College of Engineering, Bandra, Mumbai
@@ -134,7 +134,7 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
               <div className="p-4 rounded-xl bg-[#060c20] border border-purple-500/30 space-y-2">
                 <div className="flex justify-between items-start">
                   <span className="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 text-[11px] font-bold">
-                    Science Stream
+                    Science Stream (H.S.C.)
                   </span>
                   <span className="text-xs text-slate-400 font-mono">2018 - 2020</span>
                 </div>
@@ -142,7 +142,7 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
                   Higher Secondary Certificate (H.S.C.)
                 </h5>
                 <p className="text-xs text-purple-300 font-medium">
-                  Science & Information Technology
+                  Science Stream
                 </p>
                 <p className="text-xs text-slate-400">
                   Shri T.P. Bhatia College of Science, Kandivali
@@ -172,10 +172,10 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
                 </div>
                 <div>
                   <h6 className="text-sm font-bold text-white">
-                    1. Online Video Meeting Platform with Smart Notes (AI Meeting Hub)
+                    1. AI Meeting Hub (Online Video Calling with AI Smart Summaries)
                   </h6>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                    Similar to Zoom or Google Meet, people can talk face-to-face over video call. An artificial intelligence system listens to the meeting and automatically writes clean summary notes so nobody has to write notes manually!
+                    Similar to Google Meet or Zoom, people can have live video meetings. An artificial intelligence system automatically takes clean summary notes of everything discussed so team members don't have to write notes manually!
                   </p>
                 </div>
               </div>
@@ -183,14 +183,14 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
               {/* Project 2 */}
               <div className="p-4 rounded-xl bg-[#060c20] border border-slate-800 flex items-start gap-3.5">
                 <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 shrink-0">
-                  <BarChart className="w-5 h-5" />
+                  <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
                   <h6 className="text-sm font-bold text-white">
-                    2. Public Sentiment & Election Data Analysis
+                    2. My Portfolio (Sci-Fi 3D Interactive Cybernetic Website)
                   </h6>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                    A program that reads thousands of online public opinions during elections and automatically creates colorful charts to show what topics people care about the most.
+                    A high-tech sci-fi interactive website featuring a 3D robot viewport, deep space star particles, sound synthesizer effects, and an interactive hacker command-line terminal to showcase Gopal's engineering skills.
                   </p>
                 </div>
               </div>
@@ -202,10 +202,10 @@ const ParentalViewModal = ({ isOpen, onClose }) => {
                 </div>
                 <div>
                   <h6 className="text-sm font-bold text-white">
-                    3. College Digital Library Management System
+                    3. Library Management System (Python Django + MySQL)
                   </h6>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                    A website built for schools and colleges to manage students, register books, and track who borrowed or returned books with automated reminders.
+                    A digital management software built with Python Django and MySQL for colleges and schools to register students, track book borrowing and returns, and calculate overdue return fees automatically.
                   </p>
                 </div>
               </div>

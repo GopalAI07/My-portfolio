@@ -53,26 +53,26 @@ const ResumeModal = ({ isOpen, onClose }) => {
           
           {/* Header */}
           <div className="border-b border-slate-800 pb-5">
-            <h1 className="text-2xl sm:text-3xl font-bold font-display text-white tracking-wide">
+            <h1 className="text-2xl sm:text-3xl font-extrabold font-display text-white tracking-wide">
               {personalInfo.name}
             </h1>
-            <p className="text-sm font-semibold text-cyan-400 mt-1 uppercase tracking-wider">
+            <p className="text-sm font-bold text-cyan-400 mt-1 uppercase tracking-wider">
               {personalInfo.title}
             </p>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-400 font-mono mt-3">
-              <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-cyan-400" /> {personalInfo.location}</span>
-              <span>•</span>
-              <span className="flex items-center gap-1"><Mail className="w-3.5 h-3.5 text-cyan-400" /> {personalInfo.email}</span>
-              <span>•</span>
-              <span className="flex items-center gap-1"><Phone className="w-3.5 h-3.5 text-cyan-400" /> {personalInfo.phone}</span>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-400 font-mono mt-3">
+              <span>{personalInfo.location}</span>
+              <span>|</span>
+              <a href={`mailto:${personalInfo.email}`} className="text-cyan-400 hover:underline">{personalInfo.email}</a>
+              <span>|</span>
+              <span>{personalInfo.phone}</span>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-cyan-400 mt-2">
               <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                LinkedIn: linkedin.com/in/gopal-chauhan-1b5949264
+                LinkedIn: {personalInfo.linkedin}
               </a>
               <span>•</span>
               <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                GitHub: github.com/GopalAI07
+                GitHub: {personalInfo.github}
               </a>
             </div>
           </div>
@@ -82,7 +82,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             <h2 className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest border-b border-slate-800 pb-1">
               SUMMARY
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
               {personalInfo.summary}
             </p>
           </div>
@@ -93,17 +93,18 @@ const ResumeModal = ({ isOpen, onClose }) => {
               TECHNICAL SKILLS
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-slate-300 font-mono">
-              <div>• Frontend Engineering: React 18, Vite, JavaScript (ES6+), Three.js, Redux Toolkit, Tailwind CSS</div>
-              <div>• Backend Development: Python (OOP), FastAPI, Django (MVT), RESTful APIs, JWT Auth</div>
-              <div>• Databases & Data: PostgreSQL, MySQL, SQL Query Optimization, SQLAlchemy ORM</div>
-              <div>• Real-Time & Networking: WebSockets, WebRTC Video/Audio Calling & Signaling</div>
-              <div>• Cloud & DevOps: Git/GitHub, Vercel, Render, Postman API Testing & Debugging</div>
-              <div>• Tools & Integrations: Google Gemini API, Streamlit, Pandas, NumPy, Bootstrap 5</div>
+              <div>• Programing language Python, JavaScript and SQL</div>
+              <div>• MySQL Database</div>
+              <div>• Django Web Framework in Python</div>
+              <div>• OOPs concept in Python</div>
+              <div>• MVT(Model View Template) in Django</div>
+              <div>• React js</div>
+              <div>• HTML ,CSS and Bootstrap</div>
             </div>
           </div>
 
           {/* Projects */}
-          <div className="space-y-4">
+          <div className="space-y-5">
             <h2 className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest border-b border-slate-800 pb-1">
               PROJECTS
             </h2>
@@ -111,51 +112,26 @@ const ResumeModal = ({ isOpen, onClose }) => {
             {projectsData.map((project) => (
               <div key={project.id} className="space-y-1.5">
                 <div className="flex flex-wrap items-center justify-between text-xs font-bold text-white">
-                  <span className="text-sm font-display text-cyan-300">{project.title.toUpperCase()}</span>
-                  <span className="text-slate-400 font-mono text-[11px]">Languages: {project.languages.join(', ')}</span>
+                  <span className="text-sm font-display text-cyan-300 font-bold">{project.title} :</span>
+                  <span className="text-slate-400 font-mono text-[11px]">Language:- {project.languages.join(', ')}.</span>
                 </div>
                 <div className="text-[11px] font-mono text-slate-400">
-                  <strong className="text-slate-300">Frameworks/Libraries:</strong> {project.tags.join(', ')}
+                  <strong className="text-slate-300">Frameworks/Libraries:-</strong> {project.tags.join(', ')}.
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   {project.description}
                 </p>
-                <ul className="list-disc list-inside text-xs text-slate-400 space-y-0.5 pl-1">
-                  {project.features.map((f, i) => (
-                    <li key={i}>{f}</li>
-                  ))}
-                </ul>
                 <div className="flex flex-wrap gap-4 text-[11px] font-mono text-cyan-400 pt-1">
                   {project.websiteLink && (
-                    <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                      Website: {project.websiteLink}
+                    <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                      Website Link: <span className="underline">{project.websiteLink}</span>
                     </a>
                   )}
                   {project.githubLink && (
-                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                      GitHub: {project.githubLink}
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                      GitHub link: <span className="underline">{project.githubLink}</span>
                     </a>
                   )}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Education */}
-          <div className="space-y-3">
-            <h2 className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest border-b border-slate-800 pb-1">
-              EDUCATION
-            </h2>
-
-            {educationData.map((edu, idx) => (
-              <div key={idx} className="space-y-0.5 text-xs">
-                <div className="flex justify-between font-bold text-white">
-                  <span>{edu.degree.toUpperCase()}</span>
-                  <span className="font-mono text-slate-400">{edu.duration}</span>
-                </div>
-                <div className="flex justify-between text-slate-400 font-mono text-[11px]">
-                  <span>{edu.institution}</span>
-                  <span className="text-emerald-400 font-bold">{edu.grade}</span>
                 </div>
               </div>
             ))}
@@ -166,17 +142,53 @@ const ResumeModal = ({ isOpen, onClose }) => {
             <h2 className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest border-b border-slate-800 pb-1">
               CERTIFICATES
             </h2>
-            <ul className="list-disc list-inside text-xs text-slate-300 space-y-0.5">
-              {certificatesData.map((c, i) => (
-                <li key={i}><strong>{c.title}</strong></li>
-              ))}
-            </ul>
+            <div className="space-y-2 text-xs text-slate-300 font-mono">
+              <div>
+                <p className="font-bold text-slate-200">• Introduction To JavaScript.</p>
+                <p className="text-cyan-400 text-[11px] pl-3">Certificate Link: <span className="underline cursor-pointer">View Certificate</span></p>
+              </div>
+              <div>
+                <p className="font-bold text-slate-200">• Python Fundamentals For Beginners.</p>
+                <p className="text-cyan-400 text-[11px] pl-3">Certificate Link: <span className="underline cursor-pointer">View Certificate</span></p>
+              </div>
+              <div>
+                <p className="font-bold text-slate-200">• PropFusion Training Program.</p>
+                <p className="text-cyan-400 text-[11px] pl-3">Certificate Link: <span className="underline cursor-pointer">View Certificate</span> | <span className="underline cursor-pointer">View LOR</span> | <span className="underline cursor-pointer">View LOR Certificate.pdf</span></p>
+              </div>
+            </div>
           </div>
 
-          {/* Additional Information */}
-          <div className="space-y-1 text-xs text-slate-300 pt-2 border-t border-slate-800 font-mono">
-            <div>• <strong>Languages:</strong> {personalInfo.languages.join(', ')}</div>
-            <div>• <strong>Hobbies:</strong> {personalInfo.hobbies.join(', ')}</div>
+          {/* Education */}
+          <div className="space-y-3">
+            <h2 className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest border-b border-slate-800 pb-1">
+              EDUCATION
+            </h2>
+
+            {educationData.map((edu, idx) => (
+              <div key={idx} className="space-y-1 text-xs">
+                <div className="flex flex-wrap justify-between font-bold text-white">
+                  <span>{edu.degree}</span>
+                  <span className="font-mono text-slate-400">{edu.duration}</span>
+                </div>
+                <div className="font-mono text-cyan-400 font-semibold text-[11px]">
+                  {edu.institution}
+                </div>
+                <p className="text-xs text-slate-300 pl-3">
+                  • {edu.highlights[0]}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Hobbies & Profile Links */}
+          <div className="space-y-1.5 text-xs text-slate-300 pt-2 border-t border-slate-800 font-mono">
+            <h2 className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest pb-1">
+              HOBBIES & PROFILE LINKS
+            </h2>
+            <div>• <strong>Languages:</strong> {personalInfo.languages.join(', ')}.</div>
+            <div>• <strong>Linked-In:</strong> <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">{personalInfo.linkedin}</a></div>
+            <div>• <strong>GitHub Link:</strong> <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">{personalInfo.github}</a></div>
+            <div>• <strong>Hobbies:</strong> {personalInfo.hobbies.join(', ')}.</div>
           </div>
 
         </div>

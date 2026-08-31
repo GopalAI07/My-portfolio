@@ -9,7 +9,8 @@ import {
   Code2,
   Terminal,
   Orbit,
-  Cpu
+  Cpu,
+  ExternalLink
 } from 'lucide-react';
 import { educationData, certificatesData } from '../data/portfolioData';
 import { playCyberClick, playCyberHover } from '../utils/soundEffects';
@@ -17,6 +18,8 @@ import { playCyberClick, playCyberHover } from '../utils/soundEffects';
 const certIcons = {
   Code2: Code2,
   Terminal: Terminal,
+  Sparkles: Sparkles,
+  FileBadge: FileBadge,
 };
 
 const EducationTimeline = () => {
@@ -28,13 +31,13 @@ const EducationTimeline = () => {
         <div className="text-center space-y-3 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#060e28] border border-cyan-500/30 text-cyan-400 text-xs font-mono">
             <Orbit className="w-3.5 h-3.5" />
-            <span>[SUBSYSTEM 04: ACADEMIC FLIGHT RECORDS & TELEMETRY]</span>
+            <span>[SUBSYSTEM 04: ACADEMIC RECORDS & CERTIFICATIONS]</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white tracking-tight">
-            Academic & <span className="gradient-text-plasma">Flight Credentials</span>
+            Academic & <span className="gradient-text-plasma">Certifications</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-sans">
-            Formal engineering degree in Artificial Intelligence & Data Science alongside certified software competencies.
+            Formal engineering degree in Artificial Intelligence & Data Science alongside certified software engineering competencies.
           </p>
         </div>
 
@@ -44,7 +47,7 @@ const EducationTimeline = () => {
           <div className="lg:col-span-7 space-y-8">
             <h3 className="text-xl font-bold text-white font-display flex items-center gap-2 mb-6">
               <GraduationCap className="w-5 h-5 text-cyan-400" />
-              <span>Engineering Flight Academy</span>
+              <span>Engineering Academy</span>
             </h3>
 
             <div className="relative pl-6 sm:pl-8 border-l-2 border-cyan-500/40 space-y-10">
@@ -96,7 +99,7 @@ const EducationTimeline = () => {
           <div className="lg:col-span-5 space-y-6">
             <h3 className="text-xl font-bold text-white font-display flex items-center gap-2 mb-6">
               <Award className="w-5 h-5 text-purple-400" />
-              <span>Verified Robotic Certifications</span>
+              <span>Certificates & Training</span>
             </h3>
 
             <div className="space-y-4">
@@ -106,7 +109,7 @@ const EducationTimeline = () => {
                   <div
                     key={idx}
                     onMouseEnter={playCyberHover}
-                    className="mech-card p-5 border border-slate-800 hover:border-purple-500/50 bg-[#060c22]/90 transition-all group"
+                    className="mech-card p-5 border border-slate-800 hover:border-purple-500/50 bg-[#060c22]/90 transition-all group space-y-3"
                   >
                     <div className="flex items-center justify-between gap-4">
                       <div className="flex items-center gap-3.5">
@@ -127,6 +130,21 @@ const EducationTimeline = () => {
                         {cert.date}
                       </span>
                     </div>
+
+                    {/* Certificate Links */}
+                    {cert.links && cert.links.length > 0 && (
+                      <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60 font-mono text-xs">
+                        {cert.links.map((link, lIdx) => (
+                          <span
+                            key={lIdx}
+                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 text-[11px]"
+                          >
+                            <span>{link.label}</span>
+                            <ExternalLink className="w-2.5 h-2.5 text-cyan-400" />
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 );
               })}
@@ -139,11 +157,11 @@ const EducationTimeline = () => {
                 <span>Degree Specialization Highlights</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed font-sans">
-                Graduated with strong technical competencies in <strong>Artificial Intelligence, Data Analytics, Generative AI models</strong>, and <strong>Full-Stack Software Engineering</strong> from University of Mumbai affiliate Rizvi College of Engineering.
+                Graduated with strong technical competencies in <strong>Python Full-Stack Development, Artificial Intelligence, Data Science</strong>, and <strong>Relational Database Architectures</strong> from Rizvi College of Engineering, Bandra.
               </p>
               <div className="pt-2 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800">
-                <span>UNIVERSITY OF MUMBAI</span>
-                <span className="text-cyan-300 font-bold">CGPI: 7.83</span>
+                <span>RIZVI COLLEGE OF ENGINEERING</span>
+                <span className="text-cyan-300 font-bold">Aggregate CGPI: 7.83</span>
               </div>
             </div>
 

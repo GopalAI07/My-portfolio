@@ -28,12 +28,12 @@ const Footer = ({ onOpenResume }) => {
               </div>
               <div>
                 <h4 className="font-bold text-base text-white font-display">GOPAL CHAUHAN</h4>
-                <p className="text-xs font-mono text-cyan-400">MECHA AI & DATA SCIENCE ENGINEER</p>
+                <p className="text-xs font-mono text-cyan-400">PYTHON FULL STACK DEVELOPER</p>
               </div>
             </div>
             
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm font-sans">
-              Engineering interstellar-grade AI solutions, low-latency WebRTC platforms, and resilient full-stack systems in deep space.
+              Engineering high-performance Python full-stack web applications, modern responsive React interfaces, robust backend APIs & real-time systems.
             </p>
 
             <div className="flex items-center gap-2 pt-2">

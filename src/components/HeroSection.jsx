@@ -58,44 +58,44 @@ const HeroSection = ({ onOpenResume, onOpenParentalView }) => {
               </span>
               <span className="font-bold tracking-wider">UNIT: GOPAL-DEV</span>
               <span className="text-slate-600">|</span>
-              <span className="text-slate-300">FULL-STACK SOFTWARE DEVELOPER</span>
+              <span className="text-slate-300">PYTHON FULL STACK DEVELOPER</span>
             </div>
 
             {/* Headline */}
             <div className="space-y-2">
               <p className="text-xs sm:text-sm font-mono text-cyan-400 font-semibold tracking-widest uppercase flex items-center gap-2">
                 <Cpu className="w-4 h-4 text-cyan-400" />
-                <span>Full-Stack Web & Software Engineering</span>
+                <span>Python Full Stack Web Engineering</span>
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-white leading-tight">
                 <span className="block text-slate-100">{personalInfo.name}</span>
                 <span className="block gradient-text-plasma mt-1">
-                  Full-Stack Developer
+                  Python Full Stack Developer
                 </span>
               </h1>
             </div>
 
             {/* Subtitle with Robotic Precision */}
             <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
-              Architecting responsive <span className="text-cyan-300 font-medium">React 18 frontends</span>, 
-              high-throughput <span className="text-purple-300 font-medium">FastAPI & Django backends</span>, 
-              scalable <span className="text-emerald-300 font-medium">PostgreSQL & MySQL databases</span>, 
-              and real-time <span className="text-blue-300 font-medium">WebRTC & WebSockets</span>.
+              Engineering full-stack architectures with <span className="text-purple-300 font-medium">Python OOP & Django (MVT)</span>, 
+              interactive <span className="text-cyan-300 font-medium">React js & Vite frontends</span>, 
+              high-performance <span className="text-emerald-300 font-medium">MySQL & PostgreSQL databases</span>, 
+              and real-time <span className="text-blue-300 font-medium">FastAPI, WebSockets & WebRTC</span>.
             </p>
 
             {/* Robotic Subsystem Telemetry Chips */}
             <div className="flex flex-wrap gap-2 pt-1 font-mono text-xs text-slate-300">
-              <span className="px-3 py-1 bg-[#091129] border border-cyan-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Code className="w-3.5 h-3.5 text-cyan-400" /> React 18 & Vite
-              </span>
               <span className="px-3 py-1 bg-[#091129] border border-purple-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Flame className="w-3.5 h-3.5 text-purple-400" /> FastAPI & Django
+                <Flame className="w-3.5 h-3.5 text-purple-400" /> Python OOP & Django
               </span>
-              <span className="px-3 py-1 bg-[#091129] border border-blue-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-blue-400" /> PostgreSQL & MySQL
+              <span className="px-3 py-1 bg-[#091129] border border-cyan-500/30 rounded flex items-center gap-1.5 shadow-sm">
+                <Code className="w-3.5 h-3.5 text-cyan-400" /> React js & Vite
               </span>
               <span className="px-3 py-1 bg-[#091129] border border-emerald-500/30 rounded flex items-center gap-1.5 shadow-sm">
-                <Radio className="w-3.5 h-3.5 text-emerald-400" /> WebSockets & WebRTC
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> MySQL & SQL
+              </span>
+              <span className="px-3 py-1 bg-[#091129] border border-blue-500/30 rounded flex items-center gap-1.5 shadow-sm">
+                <Radio className="w-3.5 h-3.5 text-blue-400" /> FastAPI & WebSockets
               </span>
             </div>
 

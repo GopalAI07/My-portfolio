@@ -11,13 +11,17 @@ import {
   Cpu, 
   Radio, 
   Globe, 
-  Orbit 
+  Orbit,
+  Layers,
+  Layout
 } from 'lucide-react';
 import { projectsData } from '../data/portfolioData';
 import { playCyberClick, playCyberHover } from '../utils/soundEffects';
 
 const projectIcons = {
   Video: Video,
+  Layers: Layers,
+  Layout: Layout,
   BarChart3: BarChart3,
   BookOpen: BookOpen,
 };

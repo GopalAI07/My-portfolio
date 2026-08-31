@@ -20,24 +20,24 @@ import { playCyberClick, playCyberHover } from '../utils/soundEffects';
 const AboutSection = () => {
   const coreCompetencies = [
     {
-      icon: Cpu,
-      title: "Frontend Engineering & UI/UX",
-      desc: "Building responsive, component-driven user interfaces using React 18, Vite, modern ES6+, Tailwind CSS, and state management with Redux."
-    },
-    {
       icon: Brain,
-      title: "Backend & Microservices Architecture",
-      desc: "Engineering high-throughput, secure RESTful APIs and backend services using FastAPI and Django (MVT) with JWT auth and Python OOP."
+      title: "Python OOP & Django (MVT)",
+      desc: "Architecting robust web applications with Django Web Framework, MVT design patterns, Python OOP concepts, and clean backend logic."
     },
     {
-      icon: Radar,
-      title: "Real-Time Systems & WebRTC",
-      desc: "Designing low-latency WebSocket signaling relays, multi-user audio/video WebRTC rooms, and live communication pipelines."
+      icon: Cpu,
+      title: "React js & Frontend Engineering",
+      desc: "Building responsive, modern user interfaces using React js (React 18 & Vite), JavaScript ES6+, HTML5, CSS3, Bootstrap, and Tailwind CSS."
     },
     {
       icon: Globe,
-      title: "Database Design & Cloud Deployment",
-      desc: "Architecting relational schemas in PostgreSQL and MySQL, optimizing SQL queries, and deploying production apps across Vercel and Render."
+      title: "MySQL & Relational Databases",
+      desc: "Designing normalized relational schemas in MySQL & PostgreSQL, writing high-efficiency SQL queries, and managing ORM data layers."
+    },
+    {
+      icon: Radar,
+      title: "Real-Time APIs & AI Integration",
+      desc: "Developing FastAPI REST microservices, low-latency WebRTC/WebSocket video conferencing, and integrating Google Gemini AI models."
     }
   ];
 
@@ -49,13 +49,13 @@ const AboutSection = () => {
         <div className="text-center space-y-3 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#060e28] border border-cyan-500/30 text-cyan-400 text-xs font-mono">
             <Bot className="w-3.5 h-3.5" />
-            <span>[SUBSYSTEM 01: FULL-STACK DEVELOPER PROFILE & DIRECTIVES]</span>
+            <span>[SUBSYSTEM 01: PYTHON FULL STACK DEVELOPER PROFILE]</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white tracking-tight">
             Developer Profile & <span className="gradient-text-plasma">Core Expertise</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-sans">
-            Full-Stack Developer specialized in architecting scalable, modern web applications from interactive frontends to robust server-side backends.
+            Python Full Stack Developer specialized in architecting scalable, modern web applications from interactive React frontends to robust Python & Django backends.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const AboutSection = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white font-display">Mission Directive & Objective</h3>
-                    <p className="text-xs font-mono text-cyan-400">SECTOR: MUMBAI (IN) | DEPLOYMENT STATUS: ACTIVE</p>
+                    <p className="text-xs font-mono text-cyan-400">SECTOR: MUMBAI (IN) | STATUS: OPEN FOR ROLES</p>
                   </div>
                 </div>
                 <span className="hidden sm:inline-block font-mono text-[10px] text-slate-500 bg-slate-900 px-2 py-1 rounded border border-slate-800">
@@ -89,15 +89,15 @@ const AboutSection = () => {
               <div className="space-y-3 pt-2">
                 <div className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  <span>Mastery in <strong>Python Object-Oriented Programming (OOP)</strong>, MVT architectures, and algorithmic optimizations.</span>
+                  <span>Proficiency in <strong>Python OOPs concepts</strong>, <strong>Django Web Framework (MVT)</strong>, and <strong>MySQL Database</strong>.</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  <span>Proven record of deploying <strong>cloud-native AI systems</strong> across Vercel and Render with live authentication.</span>
+                  <span>Interactive frontend engineering with <strong>React js (React 18 & Vite)</strong>, <strong>JavaScript (ES6+)</strong>, and <strong>Bootstrap / Tailwind CSS</strong>.</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  <span>Deep commitment to clean modular architecture, high precision, and mission success.</span>
+                  <span>Hands-on production projects: <strong>AI Meeting Hub</strong>, <strong>Cybernetic 3D Portfolio</strong>, and <strong>Django Library Management System</strong>.</span>
                 </div>
               </div>
             </div>
